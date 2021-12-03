@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 
+import DB_URL from './private.js'
 
 import router from './router.js';
 import routerUser from "./userRouter.js";
@@ -8,7 +9,6 @@ const PORT = 5000;
 
 const app = express()
 
-const DB_URL = `mongodb+srv://danpuch:Illia2002@cluster0.f5x6l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 app.use(express.json())
 
